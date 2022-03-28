@@ -1,75 +1,53 @@
+//string
+let nombre='Eugenia'
+let apellido = 'Perez'
 
-//codigo javascrip
-alert("Bienvenidos a javascrip!!"); //mensaje de alerta (ventana nueva)
-console.log("Bienvenidos a javascrip!!"); //muestra por consola
-console.log(5 + 3);
+let frase= '        Bienvenidos a la clase  '
 
-//mostrar en el navegador
-document.write("Es un gusto saludarte en este curso");
+//cuanto caracteres tienen los string
+console.log("El nombre tiene:", nombre.length,"caracteres");
+console.log(apellido.length);
+console.log(frase.length);
 
+//como quitar los espacios en blanco adelante y atras
+console.log(frase.trim().length);
 
-//variables
-var nombre;
-nombre = 'pepito';
+//mayusculas
+console.log(apellido.toUpperCase());
 
-let apellido = 'Gonzalez';
+//minuscula
+console.log(nombre.toLowerCase());
+//extraer una letra
+console.log(frase.charAt(10)); //extrae solo la letra de esa posicion
+console.log(frase.substring(0,3)); //comenza en la poscion cero y tomame las 3 primeras letras
 
-const pi = 3.14;
+console.log(nombre);
+console.log(nombre.substring(15)); //extrae desde la posicion 15
 
-//tipos de datos
+//separar letras
+console.log(apellido.split("")); //separa letra por letra con un arreglo
+console.log(apellido.split(" "));//separa cada palabra en un arreglo
 
-//string 
-let cliente = 'Fabricio'
-let alumno='Roberto Gonzalez'
-let mensaje='Hola mundo, soy feliz'
+let texto="Hola-que-asi";
+let arregloTexto = console.log(texto.split("-")); //separar donde hay guiones
 
-//number
-let numero1=34
-let numero2=52
-let numero3=56.89
+console.log(arregloTexto.join(" ")); //separa donde hay guiones
 
-//boolean
-let comprar=true
-let comer=false
+//ultima letra de una palabra o frase
+console.log(apellido.charAt(apellido.length - 1));
 
-//null
-let billetera=null
+//tarea
+let palabra = "marmota";
 
-//undefined
-let caja
+//pasar a mayuscula
+//pasar a minuscula
+//capitalizar una palabra (la primera letra este en mayuscula)
 
-//array o arreglos
-let arreglo = ['Pablo', 45, false]
-let alumnos = ['Jose', 'Alberto', 'Florida']
+let nom = "agostina"
 
-//object u objetos
-let persona = {
-    nombre:'Josefina',
-    apellido:'Mandarino',
-    edad:'33'
-}
+//mayuscula
+console.log(nom.toUpperCase());
 
-//operadores
-let num1=20;
-let num2=2;
+//minuscula
+console.log(nom.toLowerCase());
 
-let suma = numero1 + numero2;
-let resta = numero1 - numero2;
-let multiplicacion = numero1 * numero2;
-let division = numero1 / numero2;
-
-let resto = num1 % num2; //devuelve el resto de la division
-
-//unitarios
-++num2
---num2
-
-//relacionales 
-num1 = 22;
-num2 = "22";
-console.log(num1 === num2);
-console.log(num1 >= num2);
-console.log(num1 <= num2);
-console.log(num1 != num2);
-
-console.log("El resultado de la suma es" + suma);
