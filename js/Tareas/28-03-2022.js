@@ -11,7 +11,7 @@ let numeroDecimal = parseFloat(raiz.toFixed(2));
 let nroQuintaPotencia = (Math.pow(numeroAleatorio,5)); //usamos la funcíon para elevar el numero aleatorio obtenido a la quinta potencia
 
 console.log(
-  `La raiz cuadrada del número ${numeroAleatorio} es de ${numeroDecimal}`
+  `La raiz cuadrada del número ${numeroAleatorio} es de ${raiz}`
 );
 
 console.log(`El numero aleatorio ${numeroAleatorio} elevado a la quinta potencia es: ${nroQuintaPotencia}`);
