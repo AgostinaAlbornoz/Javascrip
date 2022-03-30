@@ -1,53 +1,51 @@
-//string
-let nombre='Eugenia'
-let apellido = 'Perez'
+/*Tarea 1
+Obtener un número aleatorio entre 1 y 100
 
-let frase= '        Bienvenidos a la clase  '
+Calcular su raíz cuadrada y mostrar en consola el resultado
 
-//cuanto caracteres tienen los string
-console.log("El nombre tiene:", nombre.length,"caracteres");
-console.log(apellido.length);
-console.log(frase.length);
+Elevarlo a la quinta potencia y mostrar en consola el resultado */
 
-//como quitar los espacios en blanco adelante y atras
-console.log(frase.trim().length);
+let numeroAleatorio = Math.ceil(Math.random() * 100);
+let raiz = Math.sqrt(numeroAleatorio);
+let numeroDecimal = parseFloat(raiz.toFixed(2));
+let nroQuintaPotencia = (Math.pow(numeroAleatorio,5));
 
-//mayusculas
-console.log(apellido.toUpperCase());
+console.log(
+  `La raiz cuadrada del número ${numeroAleatorio} es de ${numeroDecimal}`
+);
 
-//minuscula
-console.log(nombre.toLowerCase());
-//extraer una letra
-console.log(frase.charAt(10)); //extrae solo la letra de esa posicion
-console.log(frase.substring(0,3)); //comenza en la poscion cero y tomame las 3 primeras letras
+console.log(`El numero aleatorio ${numeroAleatorio} elevado a la quinta potencia es: ${nroQuintaPotencia}`);
 
-console.log(nombre);
-console.log(nombre.substring(15)); //extrae desde la posicion 15
+/*Tarea 2
+Según la siguiente lista de números: 120,250,78,96,-38,45.72,1450,2380
+Mostrar en consola el menor
+Mostrar en consola el mayor*/
 
-//separar letras
-console.log(apellido.split("")); //separa letra por letra con un arreglo
-console.log(apellido.split(" "));//separa cada palabra en un arreglo
+console.log(
+    `El número mínimo de la lista es ${Math.min( //a partir de la lista, devuelve el menor 
+        120,250,78,96,-38,45.72,1450,2380
+    )}`
+  );
 
-let texto="Hola-que-asi";
-let arregloTexto = console.log(texto.split("-")); //separar donde hay guiones
+  console.log(
+    `El número máximo de la lista es ${Math.max( //a partir de la lista, devuelve el mayor
+        120,250,78,96,-38,45.72,1450,2380
+    )} `
+  );
 
-console.log(arregloTexto.join(" ")); //separa donde hay guiones
+/*Tarea 3
+Dado los siguientes números, dejarlos con dos decimales y mostrar en consola los mismos redondeados:
+45.895025
+56.788789
+78.413582 */
 
-//ultima letra de una palabra o frase
-console.log(apellido.charAt(apellido.length - 1));
+let numero1 = 45.895025;
+console.log(parseFloat(numero1.toFixed(2))); //numero redondeado con 2 decimales
 
-//tarea
-let palabra = "marmota";
+let numero2 = 56.788789;
+console.log(parseFloat(numero2.toFixed(2)));
 
-//pasar a mayuscula
-//pasar a minuscula
-//capitalizar una palabra (la primera letra este en mayuscula)
+let numero3 = 78.413582;
+console.log(parseFloat(numero3.toFixed(2)));
 
-let nom = "agostina"
-
-//mayuscula
-console.log(nom.toUpperCase());
-
-//minuscula
-console.log(nom.toLowerCase());
-
+/*Plus: devolver las consignas de las tareas en un template string que indique qué es lo que estamos obteniendo.*/
