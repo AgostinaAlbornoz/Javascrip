@@ -5,6 +5,7 @@ Calcular su raíz cuadrada y mostrar en consola el resultado
 
 Elevarlo a la quinta potencia y mostrar en consola el resultado */
 
+
 let numeroAleatorio = Math.ceil(Math.random() * 100);
 let raiz = Math.sqrt(numeroAleatorio); 
 let numeroDecimal = parseFloat(raiz.toFixed(2)); 
