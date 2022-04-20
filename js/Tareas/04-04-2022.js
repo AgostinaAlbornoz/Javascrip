@@ -78,4 +78,3 @@ document.write("Es divisible por 7. ");
 } else {
 document.write("No es divisible ni por 2, ni por 3, ni por 5, ni por 7");
 }
-
