@@ -1,4 +1,3 @@
-
 // Crear un script que luego de 3 segundos muestre en el navegador la fecha del día.
 let fecha = new Date();
 const redireccionar = function () {
